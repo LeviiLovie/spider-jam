@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bounds
+  - obstacle
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Obstacle
   - 
   - 
   - 
@@ -41,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Web
+    uniqueID: 3517447851
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2128403025
+    locked: 0
+  - name: Player
+    uniqueID: 1948672919
+    locked: 0
+  - name: pick-up
+    uniqueID: 1234564391
     locked: 0
