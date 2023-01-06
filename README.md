@@ -4,7 +4,7 @@ It's a code for our game to `Mini Jam 123: Web` (https://itch.io/jam/mini-jam-12
 ## Team
 - Levi (https://github.com/LeviiLovie)
 - AlexdV (https://github.com/A1exdV)
-- GabrielLeni
+- GabrielLeni (https://gabrielleni.itch.io/)
 - Fripouille
 - Urkidden11
 
