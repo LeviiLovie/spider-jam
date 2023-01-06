@@ -9,4 +9,4 @@ It's a code for our game to `Mini Jam 123: Web` (https://itch.io/jam/mini-jam-12
 - Urkidden11
 
 ## Our Idea
-  How about this: all the children of the spider were scattered in different trees and he needs to collect them all, it will be possible to make several levels with increasing difficulty. it is necessary to create roads out of cobwebs to get from one tree to another, branches are used only as points for attaching the web. To fill up the supply of cobwebs, you need to collect food, or maybe some kind of power-ups.
+How about this: all the children of the spider were scattered in different trees and he needs to collect them all, it will be possible to make several levels with increasing difficulty. it is necessary to create roads out of cobwebs to get from one tree to another, branches are used only as points for attaching the web. To fill up the supply of cobwebs, you need to collect food, or maybe some kind of power-ups.
