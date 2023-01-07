@@ -7,3 +7,8 @@ sysinfo.txt
 Temp/FSTimeGet-703e228b108a98b44bbbc23885262751
 Temp/UnityLockfile
 Temp/workerlic
+*.cache
+*.backup
+Temp/FSTimeGet-35fe0ccd48a15054f82306d5e84fa82c
+Temp/FSTimeGet-6a24bc2dfd00b2344ac26dd6bb6cdd44
+Temp/FSTimeGet-7cdba9d7df4693045b4fd3b43f7b8470
