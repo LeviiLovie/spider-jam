@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public GameObject Point2;
 
     private bool isWeb;
+    private bool isJump;
     private Vector2 webVector2;
     private Vector2 movingVector2;
     private Vector2 mousePositionInUnits;
@@ -26,26 +27,48 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (isWeb) {
-            Physics.gravity = new Vector3(0, 0, 0);
+        //if (isWeb) {
+        //    Physics.gravity = new Vector3(0, 0, 0);
 
-            movingVector2 = (Point1.transform.position - Point2.transform.position);
-            movingVector2.Normalize();
-            Debug.Log(movingVector2);
-            if (Input.GetKey(KeyCode.A))
-            {
-                _rigitBody2d.AddForce(movingVector2);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                _rigitBody2d.AddForce(-movingVector2);
-            }
+        //    movingVector2 = (Point1.transform.position - Point2.transform.position);
+        //    movingVector2.Normalize();
+        //    Debug.Log(movingVector2);
+        //    if (Input.GetKey(KeyCode.A))
+        //    {
+        //        _rigitBody2d.AddForce(movingVector2);
+        //    }
+        //    else if (Input.GetKey(KeyCode.D))
+        //    {
+        //        _rigitBody2d.AddForce(-movingVector2);
+        //    }
+        //}
+        //else
+        //{
+        //    Physics.gravity = new Vector3(0, -1.0F, 0);
+
+        //}
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            _rigitBody2d.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * MovementSpeed * Time.deltaTime, _rigitBody2d.velocity.y);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            _rigitBody2d.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * MovementSpeed * Time.deltaTime, _rigitBody2d.velocity.y);
         }
         else
         {
-            Physics.gravity = new Vector3(0, -1.0F, 0);
+            _rigitBody2d.velocity = new Vector2(0, _rigitBody2d.velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.Space) && !isJump)
+        {
+            _rigitBody2d.AddForce(this.transform.up * JumpSpeed, ForceMode2D.Impulse);
+            Debug.Log(this.transform.position + " pose");
+            Debug.Log(this.transform.up + " : up");
+            isJump = true;
         }
     }
 
@@ -71,6 +94,7 @@ public class Player : MonoBehaviour
         {
             isWeb = true;
         }
+        isJump = false;
     }
     void OnCollisionExit2D(Collision2D other)
     {
@@ -78,5 +102,6 @@ public class Player : MonoBehaviour
         {
             isWeb = false;
         }
+        isJump = true;
     }
 }
