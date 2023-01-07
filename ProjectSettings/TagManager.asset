@@ -8,6 +8,7 @@ TagManager:
   - obstacle
   - web
   - Tree
+  - Baby
   layers:
   - Default
   - TransparentFX
