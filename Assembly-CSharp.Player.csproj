@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\WebShoot.cs" />
     <Compile Include="Assets\SimpleMove.cs" />
     <Compile Include="Assets\SoundManager.cs" />
+    <Compile Include="Assets\UImanager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
