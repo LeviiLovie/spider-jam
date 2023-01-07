@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
                 isJump = true;
             }
         } else {
-            // _rigitBody2d.velocity = new Vector2(0, -9.8f);
+            _rigitBody2d.velocity = new Vector2(0, -9.8f);  
         }
     }
 
